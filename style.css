@@ -1,0 +1,86 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: clamp(20px, 5vw, 50px) 20px 20px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: clamp(100px, 10vw, 250px);
+}
+
+h1{
+    font-size: 32px;
+    font-weight: 100;
+    text-align: center;
+}
+
+h1 span{
+    font-weight: 700;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 10px auto;
+}
+
+form{
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    box-shadow: 0 2px 5px 4px rgba(0, 0,0,0.2);
+}
+
+@media (max-width:830px){
+    .container{
+        width: 100%;
+    }
+}
+
+.resultat-item {
+    max-width: 600px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+
+  .resultat-title {
+    font-size: 22px;
+  }
+  .resultat-snippet {
+    font-size: 15px;
+    color: #444;
+  }
+  .resultat-link {
+    color: #006621;
+    text-decoration: none;
+    display: block;
+    overflow-wrap: break-word;
+  }
+
+/* .error{
+    display: none;
+} */
